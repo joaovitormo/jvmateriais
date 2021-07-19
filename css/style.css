@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing:border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header {
+    /*background-color:#03420c;*/
+    /*background-color:#81c698;*/
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    justify-content: space-between;
+    /*transform: skewx(-20deg);*/
+    /*justify-content: center;*/
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #e3e3e3;
+    
+
+
+}
+
+.conteudo {
+    background-color;
+    height: 100%;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap; /*IMPORTANTE, QUEBRA A LINHA!*/
+    justify-content: space-around;
+    
+    
+    
+}
+
+
+.banner {
+    width: 100%;
+    height: 600px;
+
+    background-image: url('../img/banner.jpg');
+}
+
+
+
+.container{
+    height: 400px;
+    width: 400px;
+    background-color:  #60da7a;
+    margin:30px;
+    margin-bottom: 60px;
+    /*border-color: rgba(167,249, 185, 0.5);
+    border-width: 15px;
+    border-right-style:solid;
+    border-bottom-style:solid;*/
+    box-shadow: 0px 0px 0px 8px rgba(167,249, 185,0.7); 
+    padding: 10px;
+
+       
+
+}
+
+.container2{
+    height:100%;
+    width: 1000px;
+    background-color:  #eaf1eb;
+    margin:30px;
+    margin-bottom: 60px;
+    /*border-color: rgba(167,249, 185, 0.5);
+    border-width: 15px;
+    border-right-style:solid;
+    border-bottom-style:solid;*/
+    box-shadow: 0px 0px 0px 8px rgba(231, 243, 233, 0.7); 
+    padding: 40px;
+
+       
+
+}
+
+form input, textarea{
+    background-color: #eaf1eb;
+    width: 80%;
+    height: 40px;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid black;
+    font-size: 16px;
+    
+  
+}
+
+.produto {
+    background-color:#105110;    width: 300px;    height: 400px;
+}
+
+form {
+    
+    margin-top: 20px;
+    width: 80%;
+    position: ;
+    height: 100%;
+    overflow: hidden;
+}
+
+.botao input {
+    background-color: rgb(6, 63, 28);
+    color: white;
+    cursor: pointer;
+}
+
+.botao input:hover {
+    background-color: rgb(2, 20, 9);
+    color: white;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+
+
+
+.container2 p{
+    font-size: 34px;
+}
+
+
+
+
+.container p{
+    font-size: 24px;
+}
+
+.marcas {
+    background-color:#105110;
+    height: 200px;
+    width: 1000px;
+    margin-bottom: 60px;
+    padding: 20px;
+}
+
+.marcas p {
+    color: white;
+    font-size: 30px;
+}
+
+.marcas img {
+    padding-left:14px ;
+}
+
+
+.logo {
+    /**height: 30%;
+    width: 30%;
+    /*transform: skewX(20deg);*/
+    display: flex;
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom:-25px ;
+}
+
+
+footer {
+    background-color: #7e7b7b;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    padding-top: 4%;
+}
+
+footer p{
+    font-size: 18px;
+}
+
+nav {
+
+
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+
+nav ul li {
+    display: inline-block; /*alinhar o menu*/
+    line-height: 80px;
+    margin: 0 6px;
+}
+nav ul li a {
+    font-size: 19px;
+    color: black;
+    font-weight: bold;
+
+}
+
+a.active,a:hover{
+    background: #105110;
+    transition: .5s;
+    padding: 3px;
+    border-radius: 5px;
+    color: #fff;
+  }
+
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+#check {
+  display: none;  
+}
+
+@media (max-width: 952px) {
+    .logo {
+      
+       padding-left: 60px ;
+    }
+    .nav ul li a{
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 858px) {
+    .marcas {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        width:60%;
+        height:100%;
+        
+    }
+    
+    .marcas img{
+        padding-bottom: 10px;
+        align-self: center;
+        max-height: max-content;
+        max-width: max-content;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #99ccb4;
+        top: 170px;
+        left: -100%;
+        text-align: center ;
+        transition: all .5s;
+        color: #fff;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 70px;
+
+    }
+    nav ul li a {
+        font-size:24px ;
+        color: #fff;
+    }
+
+    a:hover, a.active {
+        background:none ;
+        color: #085806;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+
+    .banner {
+        width: 100%;
+        height: 300px;
+    
+        background-image: url('../img/banner600.jpg');
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+
+
